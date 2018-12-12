@@ -46,8 +46,11 @@ def percentageCalculator(S, name):
 
 # Testing 
       
-s = "abcdefghijklmnopqrstuvwxyz"
+exampleInput = "abcdefghijklmnopqrstuvwxyz"
 s2 = "a"
+lettersAndNumbers = "abcdefghijklmnopqrstuvwxyz0123456789."
 
-percentageCalculator(s,"75Percent.txt") # Gives 75% accuracy -> correct
+percentageCalculator(exampleInput, "exampleInput.txt") # Gives 33.3333% accuracy -> correct
+percentageCalculator(exampleInput,"75Percent.txt") # Gives 75% accuracy -> correct
 percentageCalculator(s2, "75Percent.txt") # gives 0% accuracy -> correct
+percentageCalculator(lettersAndNumbers, "lettersAndNumbers.txt") #Gives 53.8% -> Correct
