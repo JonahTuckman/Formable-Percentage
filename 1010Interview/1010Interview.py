@@ -56,9 +56,11 @@ exampleInput = "abcdefghijklmnopqrstuvwxyz"
 s2 = "a"
 lettersAndNumbers = "abcdefghijklmnopqrstuvwxyz0123456789."
 lettersNumbersAndSymbols = "abcdefghijklmnopqrstuvwxyz0123456789./,-?!@"
+emptyInput = ""
 
 percentageCalculator(exampleInput, "exampleInput.txt") # Gives 33.3333% accuracy -> correct
 percentageCalculator(exampleInput,"75Percent.txt") # Gives 75% accuracy -> correct
 percentageCalculator(s2, "75Percent.txt") # gives 0% accuracy -> correct
 percentageCalculator(lettersAndNumbers, "lettersAndNumbers.txt") #Gives 53.8% -> Correct
-percentageCalculator(lettersNumbersAndSymbols, "nonAlphanumeric.txt")
+percentageCalculator(lettersNumbersAndSymbols, "nonAlphanumeric.txt") #Gives 50% -> Correct
+percentageCalculator(emptyInput, "exampleInput.txt") #Gives 0% -> Correct
