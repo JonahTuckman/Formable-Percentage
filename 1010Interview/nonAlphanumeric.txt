@@ -1,0 +1,1 @@
+This is going to calculate the usage-of non alphanumeric characters. This should result in 50 percent.
