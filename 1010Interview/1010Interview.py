@@ -10,7 +10,7 @@ Created on Tue Dec 11 13:15:18 2018
 
 Language: Python 3
 inputs:  String S -> any string of characters, numbers or symbols to be used 
-         String name -> name of a text file
+         String F -> name of a text file
          
 Program will determine % of words within file represented by F that can be formed
 using the letters in S. 
@@ -18,7 +18,7 @@ using the letters in S.
 No re-using of letters in input string  
 
 Non-Alphanumberic characters: If they are included in the input, they will be 
-attatched to the words alongside them. 
+attached to the words alongside them. 
 Thus a period, question mark, etc. is attatched to the end of the word prior,
 a hyphen would conjoin the two words it is attatched to.
 For all examples, the symbol must be included in the input string to be counted as Formable.
@@ -26,16 +26,16 @@ The document is split by space between words, not symbols.
 
 """
 
-def percentageCalculator(S, name):        
+def percentageCalculator(S, F):        
   
-   with open(name, "r") as data:
-    F = data.readline() # reading the file
-    F = F.split(" ") # splitting the file into a list of words
+   with open(F, "r") as data:
+    name = data.readline() # reading the file
+    name = name.split(" ") # splitting the file into a list of words
     
-    total = len(F)
+    total = len(name)
     wrong = 0
     
-    for word in F:
+    for word in name:
         originalWord = list(S) # So that all words see the same input string
         for i in range(len(word)): 
             if word[i] in originalWord: # if character being checking is in input string
