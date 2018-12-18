@@ -50,7 +50,7 @@ def percentageCalculator(S, F):
     print("{}% Formable".format(percentage))
   
 
-# Testing 
+# Testing
       
 exampleInput = "abcdefghijklmnopqrstuvwxyz"
 s2 = "a"
